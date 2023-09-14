@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="com.testng.proj.DoubleClick">
+        <methods>
+          <include name="doubleclickbtn"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="RightClick"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.testng.proj.DoubleClick -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
