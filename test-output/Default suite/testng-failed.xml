@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.proj.Calendar_Click">
+      <class name="com.testng.proj.Screenshot">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="Calendar"/>
           <include name="afterMethod"/>
+          <include name="Screenshot_Image"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.testng.proj.Calendar_Click -->
+      </class> <!-- com.testng.proj.Screenshot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

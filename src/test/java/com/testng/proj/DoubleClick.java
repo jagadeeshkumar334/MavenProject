@@ -2,8 +2,15 @@ package com.testng.proj;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +21,7 @@ import org.testng.annotations.AfterTest;
 
 public class DoubleClick {
 	public WebDriver driver;
-  @Test
+  @Test(enabled=false)
   public void doubleclickbtn() throws InterruptedException {
 	  
 	  driver.get("https://demo.guru99.com/test/simple_context_menu.html");
@@ -31,22 +38,24 @@ public class DoubleClick {
 	  Alert alt = driver.switchTo().alert();
 	  System.out.println(alt.getText());
 	  alt.accept();
-	  //alt.dismiss();
-	  
+	  //alt.dismiss();	  
   }
   
   @Test
-  public void RightClick() throws InterruptedException {
+  public void RightClick() throws InterruptedException, IOException {
 	  
 	  driver.get("https://demo.guru99.com/test/simple_context_menu.html");
-	  WebElement rightclk=driver.findElement(By.xpath("//span[contains(@class,'context-menu-one btn btn-neutral')]"));
+	  WebElement rightclk=driver.findElement(By.xpath("//spant[contains(@class,'context-menu-one btn btn-neutral')]"));
 	  System.out.println(rightclk.isDisplayed());
 	  
+	  if(!rightclk.isDisplayed()) {
+		  
+		  File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		  FileUtils.copyFile(src, new File("D://Image2"));
+	  }	  
 	  Thread.sleep(5000);
 	  Actions act1=new Actions(driver);
-	  act1.contextClick(rightclk).build().perform();
-	  
-	  
+	  act1.contextClick(rightclk).build().perform();	  	  
   }
   
   @BeforeMethod
@@ -54,8 +63,7 @@ public class DoubleClick {
 	  
 	  System.out.println("BeforeMethod");
 	  System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver_116\\chromedriver-win32\\chromedriver.exe");
-	  driver =new ChromeDriver();
-	  
+	  driver =new ChromeDriver();	  
   }
 
   @AfterMethod
@@ -75,5 +83,4 @@ public class DoubleClick {
   public void afterTest() {
 	  System.out.println("After Test");
   }
-
 }
