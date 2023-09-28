@@ -41,7 +41,7 @@ public class DropDown {
 		
 		driver.findElement(By.xpath("//input[@value='2']")).click();
 		
-		driver.close();
+		//driver.close();
 		
 		
 	}
