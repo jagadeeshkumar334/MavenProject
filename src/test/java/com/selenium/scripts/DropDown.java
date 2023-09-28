@@ -15,7 +15,7 @@ public class DropDown {
 	}
 	
 	public void dropdown() {
-		System.setProperty("webdriver.chrome.driver", "D:\\\\ChromeDriver_116\\\\chromedriver-win32\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\\\ChromeDriver_117\\\\chromedriver-win32\\\\chromedriver-win32\\\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.facebook.com/login/");
@@ -29,6 +29,8 @@ public class DropDown {
 		signup.click();
 		
 		Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='day']")));
+		
+		System.out.println(dropdown.isMultiple());
 		dropdown.selectByIndex(3);
 	
 		Select dropdown1 = new Select(driver.findElement(By.xpath("//select[@id='month']")));

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-21T11:01:54 IST" name="Default suite" finished-at="2023-09-21T11:02:05 IST" duration-ms="10807">
+  <suite started-at="2023-09-26T17:54:07 IST" name="Default suite" finished-at="2023-09-26T17:54:19 IST" duration-ms="11994">
     <groups>
     </groups>
-    <test started-at="2023-09-21T11:01:54 IST" name="Default test" finished-at="2023-09-21T11:02:05 IST" duration-ms="10807">
-      <class name="com.testng.proj.DataDrivenTesting">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.proj.DataDrivenTesting@49049a04]" started-at="2023-09-21T11:01:54 IST" name="beforeMethod" finished-at="2023-09-21T11:01:57 IST" duration-ms="3051" status="PASS">
+    <test started-at="2023-09-26T17:54:07 IST" name="Default test" finished-at="2023-09-26T17:54:19 IST" duration-ms="11994">
+      <class name="com.testng.proj.FileDownload">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.proj.FileDownload@505fc5a4]" started-at="2023-09-26T17:54:07 IST" name="beforeMethod" finished-at="2023-09-26T17:54:10 IST" duration-ms="3354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Facebook()[pri:0, instance:com.testng.proj.DataDrivenTesting@49049a04]" started-at="2023-09-21T11:01:57 IST" name="Facebook" finished-at="2023-09-21T11:02:05 IST" duration-ms="7690" status="PASS">
+        <test-method signature="f()[pri:0, instance:com.testng.proj.FileDownload@505fc5a4]" started-at="2023-09-26T17:54:10 IST" name="f" finished-at="2023-09-26T17:54:19 IST" duration-ms="8535" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Facebook -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.proj.DataDrivenTesting@49049a04]" started-at="2023-09-21T11:02:05 IST" name="afterMethod" finished-at="2023-09-21T11:02:05 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.proj.FileDownload@505fc5a4]" started-at="2023-09-26T17:54:19 IST" name="afterMethod" finished-at="2023-09-26T17:54:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.testng.proj.DataDrivenTesting -->
+      </class> <!-- com.testng.proj.FileDownload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
