@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-26T17:54:07 IST" name="Default suite" finished-at="2023-09-26T17:54:19 IST" duration-ms="11994">
+  <suite started-at="2023-10-12T07:26:00 IST" name="Default suite" finished-at="2023-10-12T07:26:15 IST" duration-ms="15020">
     <groups>
     </groups>
-    <test started-at="2023-09-26T17:54:07 IST" name="Default test" finished-at="2023-09-26T17:54:19 IST" duration-ms="11994">
-      <class name="com.testng.proj.FileDownload">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.proj.FileDownload@505fc5a4]" started-at="2023-09-26T17:54:07 IST" name="beforeMethod" finished-at="2023-09-26T17:54:10 IST" duration-ms="3354" status="PASS">
+    <test started-at="2023-10-12T07:26:00 IST" name="Default test" finished-at="2023-10-12T07:26:15 IST" duration-ms="15020">
+      <class name="com.testng.proj.AllConcepts">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.proj.AllConcepts@5a56cdac]" started-at="2023-10-12T07:26:00 IST" name="beforeMethod" finished-at="2023-10-12T07:26:10 IST" duration-ms="9467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="f()[pri:0, instance:com.testng.proj.FileDownload@505fc5a4]" started-at="2023-09-26T17:54:10 IST" name="f" finished-at="2023-09-26T17:54:19 IST" duration-ms="8535" status="PASS">
+        <test-method signature="facebookSignup()[pri:0, instance:com.testng.proj.AllConcepts@5a56cdac]" started-at="2023-10-12T07:26:10 IST" name="facebookSignup" finished-at="2023-10-12T07:26:15 IST" duration-ms="5177" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.proj.FileDownload@505fc5a4]" started-at="2023-09-26T17:54:19 IST" name="afterMethod" finished-at="2023-09-26T17:54:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- facebookSignup -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.proj.AllConcepts@5a56cdac]" started-at="2023-10-12T07:26:15 IST" name="afterMethod" finished-at="2023-10-12T07:26:15 IST" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.testng.proj.FileDownload -->
+      </class> <!-- com.testng.proj.AllConcepts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

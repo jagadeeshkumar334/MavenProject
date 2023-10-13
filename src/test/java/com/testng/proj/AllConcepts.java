@@ -18,9 +18,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 
+@Test
 public class AllConcepts {
 	public WebDriver driver;
-  @Test
   public void facebookSignup() throws IOException {
 	  
 	  driver.get("https://www.facebook.com");
@@ -87,7 +87,7 @@ public class AllConcepts {
   }
   @BeforeMethod
   public void beforeMethod() {
-	  System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver_116\\chromedriver-win32\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver_117\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
 	  ChromeOptions opt = new ChromeOptions();
 	  opt.addArguments("--disable-notifications");
 	  
